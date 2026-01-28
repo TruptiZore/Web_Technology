@@ -1,0 +1,82 @@
+What is Web Technology ? ---------->>  used to create websites and web projects/applications. 
+                            		   Web technology includes tools and languages used to build websites and web apps.
+                                       Examples : HTML, CSS, JavaScript, Node.js, React, databases, servers, APIs.
+
+
+what is javascript ? ---------->>  JavaScript is a programming language used to create dynamic and interactive web pages.
+								   It runs mainly in the browser and is used for :
+									. Form validation
+									. Animations
+									. Handling user events
+									. Communicating with servers (APIs)
+								 	JavaScript can also be used on the server side using Node.js.
+
+
+what is node.js ? ----------->> node is used to run js code outside the browser. 
+								It is runtime environment for javascript code.
+								to check version --->> node --version
+								to run ---->> node filename.js
+
+
+primitive datatypes in JS ---------
+
+. number    ------ Used for integers and floating values
+. string    ------ Used for text
+. bigint    ------ Used for very large numbers
+. boolean   ------ Used for true or false
+. null      ------ Represents intentional empty value
+. undefined ------ Variable declared but value not assigned
+. symbol    ------ Used to create unique identifiers
+
+
+non-primitive datatypes in JS --------- 
+
+. object ------  Used to store key-value pairs
+. Array  ------  Used to store multiple values
+. Function ----- Used to perform a specific task
+
+
+what is difference between let, const, var ?  -----------
+
+. let  ----->> 	Block scoped
+				Can be updated but not redeclared
+				Preferred for variables that may change
+
+. const ----->>	value cannot change or reassign or redeclare.
+				Block scoped
+				Must be initialized at declaration
+
+. var ----->>	Function scoped
+				Can be redeclared and updated
+				Hoisted
+				Not recommended in modern JavaScript
+
+
+== & === operators -------
+
+== ------->> 	It is used for checking the conditions.
+				Compares values only
+				Performs type conversion
+
+===  --------->> 	It is used for checking conditions and datatype also.
+					Strict comparison
+					No type conversion
+
+
+Symbol --------
+
+symbol ------>> 	when uniuqe ID is assign 
+					Symbol is a primitive datatype used to create unique identifiers, even if the description is same.
+					Example :	
+						let id1 = Symbol("id");
+						let id2 = Symbol("id");
+						id1 === id2              // FALSE
+
+
+js is dynamic or static -------> 	dynamic
+									Variable type is decided at runtime
+									Same variable can hold different types of values
+
+
+
+
