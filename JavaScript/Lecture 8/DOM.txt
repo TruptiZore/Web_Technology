@@ -1,0 +1,45 @@
+DOM - Documnet Object Model
+-   DOM is the bridge between JavaScript and html.
+-   DOM is the programming interface for the html 
+-   when browser load an html pgae it converts html into object, that object is called DOM.
+-   js uses DOM to change, read, add, delete HTML elemnets.
+
+
+
+----- DOM tags -----
+
+document.getElementById("title")
+
+document.getElementById("title").innerHTML = "DOM learning with Trupti"
+
+document.getElementById("title").innerHTML = "DOM learning with <h1>Trupti</h1>"
+
+document.getElementById("title").class
+
+document.getElementById("title").className
+
+document.getElementById("title").setAttribute
+
+document.getElementById("title").getAttribute
+
+
+document.querySelector("h2") ------- to get something
+
+document.querySelectorAll("li")
+
+
+----- CSS tags in DOM -----
+
+title.style.backgroundColor = "orange"     
+
+title.style.padding = "30px"
+
+title.style.borderRadius = "30px"
+
+
+
+Activity 9 ----- write uses of all DOM tags
+
+Activity 10 ----- difference between querySelector() & querySelectorAll() 
+
+Activity 11  ----- simple 2 project using html, js, css

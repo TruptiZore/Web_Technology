@@ -1,0 +1,16 @@
+ACTIVITY 10 – DIFFERENCE BETWEEN querySelector() AND querySelectorAll()
+
+
+querySelector() :
+-   Selects the first matching element only.
+-   Returns a single element.
+-   Faster when only one element is needed.
+
+querySelectorAll() :
+-   Selects all matching elements.
+-   Returns a NodeList.
+-   Used when multiple elements are needed.
+
+Key Difference :
+    querySelector()  →  single element
+    querySelectorAll()  →  multiple elements

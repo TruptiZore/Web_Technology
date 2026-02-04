@@ -1,0 +1,87 @@
+ACTIVITY 9 – USES OF DOM TAGS AND CSS TAGS
+
+1. document.getElementById("id")
+Use :
+It is used to select an HTML element using its id.
+It returns only one element because id is unique.
+
+Example use :
+Used to access and modify text, style, or attributes of a specific element.
+
+
+2. innerHTML
+Use :
+It is used to get or set the HTML content inside an element.
+It can include HTML tags.
+
+Example use :
+Used to change text or insert HTML content dynamically.
+
+
+3. class
+Use :
+It is used to check the class of an HTML element.
+Mostly used for reading class information.
+
+
+4. className
+Use :
+It is used to get or set the class name of an element.
+It can replace existing class values.
+
+Example use :
+Used to apply CSS styles using class.
+
+
+5. setAttribute()
+Use :
+It is used to set or change an attribute of an HTML element.
+
+Example use :
+Used to add class, id, src, href, etc. dynamically.
+
+
+6. getAttribute()
+Use :
+It is used to get the value of an attribute from an element.
+
+Example use :
+Used to read existing attribute values.
+
+
+7. document.querySelector()
+Use :
+It is used to select the first matching element.
+It can select using id, class, or tag name.
+
+Example use :
+Used when only one element is required.
+
+
+8. document.querySelectorAll()
+Use :
+It is used to select all matching elements.
+It returns a NodeList (collection).
+
+Example use :
+Used when multiple elements are required.
+
+
+--------------------------------------------------
+
+USES OF CSS TAGS IN DOM
+
+
+1. style.backgroundColor
+Use :
+Used to change the background color of an element dynamically.
+
+
+2. style.padding
+Use :
+Used to add space inside the element border.
+
+
+3. style.borderRadius
+Use :
+Used to make rounded corners of an element.
