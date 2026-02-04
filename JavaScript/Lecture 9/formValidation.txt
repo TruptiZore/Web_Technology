@@ -1,0 +1,16 @@
+Form Validation
+
+-   dom 
+-   dom manipulation ---- advance things like change, read, add, delete, style HTML elemnets.
+
+dom manipulation means, changing html using js.
+ex -    show error message
+        display success message
+        clear input filed
+        change text color
+
+
+
+
+
+
