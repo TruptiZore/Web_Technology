@@ -2,7 +2,8 @@
 
 /* Stack memory ----    used for primitive datatype like string, number, boolean.  
                         It means copy of value is given. When we assign 1 varialble to another a copy is made , 
-                        so changing one does not affect to others.  */ 
+                        so changing one does not affect to others.  
+*/ 
                         
 let myYoutubename = "TRZ";
 let newMyYoutubename = myYoutubename;
@@ -14,7 +15,8 @@ console.log(myoutubename);
                         
 
 /* Heap memory  ----    used for non-primitive datatype like object, array, fuctions. 
-                        reffrence (address) is share/given.  */
+                        reffrence (address) is share/given.  
+*/
 
 let user1 = { 
     fname : "Trupti",
@@ -32,4 +34,5 @@ console.log(user2.ID);
 
 /*  Objects are stored in heap memory. 
     When we assign 1 object to another variable refference is copied, Not the value. 
-    If we change 1 both varibales are change.  */
+    If we change 1 both varibales are change.  
+*/
