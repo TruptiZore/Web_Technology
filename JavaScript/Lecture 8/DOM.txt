@@ -1,8 +1,16 @@
 DOM - Documnet Object Model
 -   DOM is the bridge between JavaScript and html.
 -   DOM is the programming interface for the html 
--   when browser load an html pgae it converts html into object, that object is called DOM.
--   js uses DOM to change, read, add, delete HTML elemnets.
+-   when browser load an html page, it converts html into object, and object structure that object is called DOM.
+-   js uses DOM to do advance things like change, read, add, delete, style HTML elemnets.
+
+
+html can create form , but html can not think, js make from smart 
+
+DOM means changing html using js 
+
+
+
 
 
 
@@ -28,7 +36,7 @@ document.querySelector("h2") ------- to get something
 document.querySelectorAll("li")
 
 
------ CSS tags in DOM -----
+----- CSS style tags in DOM -----
 
 title.style.backgroundColor = "orange"     
 
