@@ -1,4 +1,12 @@
-// this - this keyword is used to inform current context 
+/*  this -  this keyword is used to inform current context 
+            this keyword not used in arrow function. 
+            this keyword used in normal function.
+*/
+
+/*  arrow function -    arrow function is nothing but lambda expression.
+                        it is shorter way to write the regular function.
+*/
+
 
 function myfun() {
     let username = "Trupti";
