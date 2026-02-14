@@ -10,7 +10,7 @@ ex -    show error message
         change text color
 
 
-
+cheking user inputs before sending data to server
 
 
 
