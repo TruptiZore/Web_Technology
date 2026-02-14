@@ -1,7 +1,7 @@
 // There are two types of object declaration
 // 1. Object Literals ----- singleton not create.
-// 2. Object Constructor  ------- singleton create.
-// 3. singleton object
+//    Object Constructor  ------- singleton create.
+// 2. singleton object
 
 // when we create Constructor object, it creates singleton object , it means itself object.
 
