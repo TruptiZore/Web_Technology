@@ -1,0 +1,52 @@
+Express
+-    WebFramework for node.js.
+-   It is a backend technology.
+-   Run js code faster and easy.
+-   npm used to handle routes, HTTP requestes & middleware.
+-   Used for server creation in node.js, error handling, middleware, routing.
+
+npm 
+-    node package manager
+-    It is a tool to install packages or required libraries for node.js
+-    Every node project uses package.json file to manage dependancies.
+
+
+step to create express project -----
+
+1. initilize node project 
+    command -   npm init / npm init -y 
+    - package.json create
+
+2. create an entry point 
+    server.js
+
+3. install express
+    command -   npm install express
+    - node modules
+    - package-lock.json this 2 files are create
+
+4. import statement 
+    const express = require('express')
+    const app = express()
+    const port = 3000
+
+5. call app (2 ways)
+    app.get("/" , (req, res) => )            // / - routes
+    aoo.post()
+    app.put()
+    app.delete()
+    app.patch()
+    app.listen()
+
+    app.get('/', (req, res) => 
+    {
+        res.send('Hello World!')
+    })
+
+    app.listen(port, () => 
+    {
+        console.log(`Example app listening on port ${port}`)
+    })
+
+6. install nodemon 
+    command -   npm install nodemon 
