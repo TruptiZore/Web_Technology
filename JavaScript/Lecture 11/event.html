@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events Demo</title>
+
+    <style>
+        body {
+            background-color: #414141;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: lightblue;
+            font-size: 18px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h2>Amazing Images (Click to Remove)</h2>
+
+    <ul id="images">
+        <li>
+            <img id="photoshop"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                onclick="alert('Photoshop Logo Clicked!')" // inline event handler 
+                alt="Photoshop Logo">
+        </li>
+
+        <li>
+            <img id="japan"
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+                alt="Mount Fuji"> 
+        </li>
+
+        <li>
+            <img id="Nature"
+                src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b"
+                alt="Nature Image">
+        </li>
+
+        <li>
+            <img id="photoman"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                alt="Photographer">
+        </li>
+
+        <li>
+            <img id="tiger"
+                src="https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+                alt="Tiger">
+        </li>
+
+        <li>
+            <a href="https://google.com" id="google">Visit Google</a>
+        </li>
+    </ul>
+  </body>
+
+  <script>
+
+    // element assign function to click event of tiger image using DOM property onclick. (inline event handler)
+    document.getElementById('tiger').onclick = function() {        
+        alert('Tiger Image Clicked!');
+    };
+    
+    // Logs the event object to the console 
+    document.getElementById("japan").addEventListener("click", function(e) {           
+        console.log(e); 
+        alert("Mount Fuji Clicked!");
+    });
+
+    document.getElementById("Nature").addEventListener("click", function() {
+        alert("Nature Image Clicked!");
+    });
+
+    document.getElementById("photoman").addEventListener("click", function() {
+        alert("Photographer Image Clicked!");
+    });
+
+    // Adding event listener to the link and preventing default behavior (navigation) using event.preventDefault() method
+    // document.getElementById("google").addEventListener("click", function(event) {
+    //     event.preventDefault(); // Prevents the default action of the link
+    //     alert("Google Link Clicked! Navigating to Google...");
+    //     window.location.href = "https://google.com"; // Redirects to Google
+    // });
+
+
+    // Event propagation
+    document.getElementById("images").addEventListener("click", function() {
+        //alert("Image List Clicked!");
+        console.log("Event Propagation : Image list Clicked inside the ul !");
+    }, true); // Use capture phase - event goes to parent to inner (child) element and inner (child) element to parent element.
+
+
+    document.getElementById("photoshop").addEventListener("click", function() {
+        //alert("Photoshop Logo Clicked!");
+        console.log("Event Propagation : Photoshop Logo Clicked inside the ul !");
+    }, false); // Use bubble phase (default) - event goes to inner element to parent , and parent to element. 
+
+    // bubble Up - event goes from inner element to parent element. (default)
+    // capture down - event goes from parent element to inner element. 
+
+    document.getElementById('google').addEventListener('click', function(event) {
+        event.stopPropagation(); // Stops the event from propagating to parent elements
+        alert('Google Link Clicked! This will not trigger the parent click event.');
+        console.log("Event Propagation : Google Link Clicked inside the ul ! but event will not propagate to parent element because of stopPropagation() method !");
+        event.preventDefault(); // Prevents the default action of the link
+    }, false);
+
+
+    // 1. Target the parent container
+    const imageList = document.querySelector('#images');
+
+    // 2. Add a single event listener to the parent
+    imageList.addEventListener('click', function(e) {
+
+    // 3. Check if the clicked element is an image
+        if (e.target.tagName === 'IMG') {
+            console.log(`Removing : ${e.target.id}`);
+            
+            // 4. Remove the parent <li> of the image
+            // parentNode is the <li> containing the <img>
+            let removeIt = e.target.parentNode;
+            removeIt.remove();
+            
+            // Alternative method :
+            // e.target.closest('li').remove();
+        }
+    }, false)
+
+  </script>
+
+  </html>

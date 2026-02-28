@@ -1,0 +1,86 @@
+Event -----
+    - Event is an action that happens in the browser, which can be detected and responded to using JavaScript. 
+    - Examples of events include clicking a button, moving the mouse, loading a page, pressing a key, submitting a form, etc.
+
+    - Event is an action that happens in browser
+
+    - javascript can have this events and respond to them, by using event listeners. 
+    - An event listener is a function that waits for a specific event to occur on a particular element and 
+      then executes a block of code in response to that event.
+
+
+    addEventListener() -------
+    - An event listener can be added to an element using the addEventListener() method. 
+    - This method takes two arguments : 
+        1. the type of event to listen for (e.g., "click", "mouseover", "keydown") 
+        2. and the function to execute when the event occurs.
+
+    For example, to add a click event listener to a button with the id "myButton", you can use the following code :
+
+    document.getElementById("myButton").addEventListener("click", function() {
+        alert("Button was clicked!");
+    });
+
+
+Types od event -----
+    1. mouse events - click, dblclick, mouseover, mouseout, mousedown, mouseup
+    2. keyboard events - keydown, keyup, keypress
+    3. browser events - load, unload, resize, scroll
+    4. form events - submit, change, focus, blur
+    5. touch events - touchstart, touchmove, touchend
+    6. window events - focus, blur, resize, scroll
+
+
+From example - 
+
+1.  onclick="alert('Photoshop Logo Clicked!')  -----
+    - Is an example of an inline event handler, which is a way to attach an event listener directly to an HTML element using an attribute. 
+    - In this case, when the image with the id "photoshop" is clicked, it will trigger the alert function that displays the message "Photoshop Logo Clicked!"
+    - html should contain structure , js should contain logic and css should contain styling. 
+    - We should avoid inline event handlers and instead use addEventListener() method to keep our code organized and maintainable. 
+    - so mixing both is bad practice and hard to maintain big projetcs.
+
+
+2.  document.getElementById('tiger').onclick('click', function() {
+    alert('Tiger Image Clicked!');
+    }); ------
+    - Select element assign function to click event when click function runs.
+    - Problem - only 1 event can be assigned. 
+    - Can not handle multiple listeners properly.
+        
+
+3.  document.getElementById("japan").addEventListener("click", function() {
+    alert("Mount Fuji Clicked!");
+    }); -------- 
+    - Select element and add event listener to click event. 
+    - When click event occurs, function will run.
+    - Advantage - can handle multiple event listeners on same element and event type. more flexible and maintain
+    - It is good practice 
+
+
+addEventListener() method is a powerful way to handle events in JavaScript.
+
+Allowing you to create interactive and dynamic web applications. 
+
+By understanding how to use it effectively, you can enhance the user experience and make your web pages more engaging.
+
+It is a js method, used to attach an event handler to an html element so that specific function run, when an particular event occurs.
+
+
+
+Activity ------
+    jquery 
+    time 
+    timestamp
+    default prevented
+    target source element  
+    current target 
+    clientX 
+    clientY 
+    pageX 
+    pageY
+    screenX 
+    screenY
+    altKey 
+    ctrlKey 
+    shiftKey
