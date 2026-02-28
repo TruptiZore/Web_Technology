@@ -1,0 +1,73 @@
+body {
+    font-family: Arial;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.money {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.plus {
+    color: green;
+}
+
+.minus {
+    color: red;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+form button {
+    width: 100%;
+    padding: 8px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 8px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+li.plus {
+    border-right: 5px solid green;
+}
+
+li.minus {
+    border-right: 5px solid red;
+}
