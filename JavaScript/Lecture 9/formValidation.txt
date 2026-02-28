@@ -11,6 +11,3 @@ ex -    show error message
 
 
 cheking user inputs before sending data to server
-
-
-
