@@ -7,7 +7,7 @@ Promises -----
 promises has 3 states ---
     1. pending (waiting) 
     2. resolved (success)/fulfill
-    3. rejected ( failed)
+    3. rejected (failed)
 
 ex ----  pending -> resolve or rejected
 
