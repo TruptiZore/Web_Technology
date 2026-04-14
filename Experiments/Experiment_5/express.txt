@@ -13,7 +13,7 @@ npm
 
 step to create express project -----
 
-1. initilize node project 
+1. initialize node project -
     command -   npm init / npm init -y 
     - package.json create
 

@@ -38,7 +38,7 @@ const port = 3000
 app.get('/', (req, res) => {
 
     const now = new Date()           // get current date & time
-    res.send('Trupti Rajgonda Zore. 24UAM316<br>Experiment 3 : Output<br>Hello<br>Current Date & Time : ' + now)  
+    res.send('Trupti Rajgonda Zore. 24UAM316<br>Experiment 5 : Output<br>Hello<br>Current Date & Time : ' + now)  
 })
 
 app.listen(port, () => {
