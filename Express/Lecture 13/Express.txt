@@ -1,0 +1,69 @@
+It is backend techonology 
+Web application framework of node js
+
+Express is minimal and flexible web appln framework for node js , that simplifies the development of web server and api's.
+It provides features such as routing, middleware support, request and response handling, template rendering, rest api creation.
+
+why express js not node js ?
+
+Routing in erxpress - it referes to determine how an appln respond to a clinet request to a specific URL and http request.
+component of routing ---
+    1. url patch
+    2. http methods
+    3. handlet function
+
+app.get('/') -- home page 
+app.get('/about') -- rout to about 
+
+
+
+step to create express project -----
+
+1. initialize node project -
+    command -   npm init / npm init -y 
+    - package.json create
+
+2. create an entry point ----
+    server.js
+
+3. install express-----
+    command -   npm install express
+    - node modules
+    - package-lock.json this 2 files are create
+
+4. import statement -----
+    const express = require('express')
+    const app = express()
+    const port = 3000
+
+5. call app (2 ways)
+    app.get("/" , (req, res) => )            // / - routes
+    aoo.post()
+    app.put()
+    app.delete()
+    app.patch()
+    app.listen()
+
+    app.get('/', (req, res) => 
+    {
+        res.send('Hello World!')
+    })
+
+    app.listen(port, () => 
+    {
+        console.log(`Example app listening on port ${port}`)
+    })  ---------// to listening the port.
+
+6. install nodemon 
+    command -   npm install nodemon 
+
+
+
+Activity ----
+1. diff betn package.json and package lock.json
+2. diff betn dependencies and dev dependencies
+3. routs 
+4. types of routing methods.
+5. port write in .env file .
+6. diff betn post() and patch()
+7. diff betn put() and patch() 
