@@ -1,0 +1,39 @@
+Angular --------
+    -   Angular is a framework of JS.
+    -   It is complicated as compared ti JS.
+
+react - only for facebook at starting. Now its very popular.
+
+Angular is a type script based fronted framework, Developed by Google.
+
+It helps us to build a Single Page Application (SPA).
+
+SPA -----  where the page does not fully reload, when navigation between different views. Not loading.
+
+example - YouTube 
+
+Tools for Angular -----
+    1. node.js - run js code outside the browser.
+    2. npm - node package manager 
+    3. Angular CLI (Command Line Interface, used to crete and manage angular App.)
+
+
+Steps --
+    1. node -v
+    2. npm install -g @angular/cli
+    3. ng new my-first-app
+    4. to run src ->> ng serve / ng s / ng serve -o
+       ( our main file is src-> index.html )
+
+
+Questions - 
+    1. How we create angular project ?
+    2. What is ng ?
+
+
+Angular Project ------
+    - figma
+    - Angular routes are nothing but Components
+    - Component ->> block of code 
+    - code done in ->> src
+    - In angular any component - there are 4 files (html, css, spec.ds-testing file, ts)

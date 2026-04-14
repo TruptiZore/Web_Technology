@@ -1,0 +1,96 @@
+Angular -------
+
+    -   Angular is a type script-based web application framework ( frontend )
+    -   Developed by Google.
+    -   It is a Single Page Application (SPA).
+    -   It helps us to build a SPA, where the page does not fully loaded, with navigation between different views.
+
+
+Need to install for Angular -----
+    1.  Node.js
+    2.  NPM
+    3.  angular CLI ( Command line Interface )
+        -   ( It is used to create angular or manage angular application )
+
+
+Commands on cmd ----
+
+    1.  To install angular CLI ( Command line Interface )
+        -   npm install -g @angular/cli 
+
+    2.  To create Angular project ----
+        -   new proj_name
+            
+    3.  To run Angular project ----
+        -   ng serve
+
+
+File names and their purpose -----
+
+1.  package.json  →>>   packages list , includes depenedancies, dev-depenedancies
+
+2.  dependencies  →>>   part of production build
+
+3.  dev dependencies  →>>   only for local dependencies
+
+4.  Angular.json  →>>   project configuration file
+
+5.  style.css  →>>   global css ( globally changes style )
+
+6.  index.html  →>>   main html file ( run 1st ), it loads angular
+
+7.  app.config.ts  →>>   app configuration file ( environment & providers )
+
+8.  main.ts  →>>   entry point of application
+
+9.  .gitignore  →>>   files or folder execute
+
+10. tsconfig.json  →>>  typescript configuration file
+
+
+Angular Components ------
+
+    -   A Component is a UI block or structure in Angular.
+    -   It is the basic building block of an Angular application.
+    -   Command to Generate Component ----
+            -   ng g c component_name
+    -   Ex ---- 
+            -   ng g c home
+
+
+When we create a component, Angular creates 4 files ------
+    1.  HTML → Structure (UI)
+    2.  CSS → Styling
+    3.  TypeScript (.ts) → Logic JS code
+    4.  Spec.ts → Testing file
+
+Ex Components -------
+    -   ng g c home
+    -   ng g c addStudent
+    -   ng g c studentList
+
+
+Using Component in HTML ------
+In app.html :
+    <app-home></app-home>
+    <app-add></app-add>
+    <app-list></app-list>
+
+These tags are used to display components in UI
+
+Component File Structure
+In app.ts : 
+    @Component({
+    imports: [..., Home, AddStudent, studentList],       // add in this file
+    })
+
+@Component is a decorator
+It defines metadata like selector, template, styles
+
+
+Short Notes -------
+
+Component → Small part of UI 
+            UI building block
+
+ng g c → Create component

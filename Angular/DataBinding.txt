@@ -1,0 +1,100 @@
+Data Binding ------
+
+    -   Data Binding connects UI (HTML) with logic (TypeScript) code.
+
+Types of Data Binding ------
+
+    1.  One-way binding ----
+            1.  Interpolation
+            2.  Property Binding
+            3.  Event Binding
+
+    2.  Two-way Binding ----
+            1.  ng module
+                    - Sync data both ways - ts to html and html to ts
+                    [(ngModel)]="value"
+
+Interpolation
+    -   Used to display data from TypeScript (ts) → HTML
+
+Syntax ---
+    {{ value }}
+
+Example ---
+    In home.ts :    
+        -   fname = "Trupti";
+
+    In home.html :
+        -   {{ fname }}
+
+Output will display : Trupti
+
+
+3 Types of One-way Data Binding ------
+
+    1.  interpolation - Show data from ts to html
+
+    2.  property - bind html property to ts variable.
+
+    3.  event - call function on event.
+
+Type of Two-way Data Binding ------
+
+    1.  ngModel - see data both ways. ts - html and  html - ts 
+
+
+Ex -----
+
+Home.ts -  (interpolation)
+{
+    fname: string = 'Trupti'
+    myRoll: int  = 123;
+}
+
+Home.html - (interpolation)
+<p>Home works!</p>
+{{fname}}
+{{myRoll}}
+
+
+Modules -----
+
+    -   Before angular 15, we use or need ng Modules , 
+        but now a days, we use 20 + version modules , so module are optional
+    -   now you can use standalone components
+
+
+Directives ---
+
+    -   think of directives like magic wands, that can chanage your web page without rewriting it.
+
+Two  Types of directives ----
+    1. structrual  - if, for loops 
+    2. attribute  - ng style     - chanage how it looks 
+
+1.  structrual Directives --- 
+        -   chanage what is on the page.
+        -   check the structure of your page.
+        -   ng if, ng for, ng switch
+
+2. Atrributes Directives ---
+        -   ng style - how it looks 
+    
+Routing -----
+    -   navigation from 1 page to another page , is routing.
+    
+
+
+Short Notes ------
+
+Data Binding → Connect TS and HTML
+
+{{ }} → Show data
+
+TS → Stores data
+HTML → Displays data
+
+
+
+Activity -----
+1. how we can use if-else, for, switch cases in angular ? write with examples.    
