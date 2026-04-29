@@ -75,7 +75,7 @@ Two  Types of directives ----
 1.  structrual Directives --- 
         -   chanage what is on the page.
         -   check the structure of your page.
-        -   ng if, ng for, ng switch
+        -   ngif, ngfor, ngswitch
 
 2. Atrributes Directives ---
         -   ng style - how it looks 
