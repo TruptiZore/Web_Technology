@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Hotel Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Hotel Finder</h1>
+    <!-- Realtime Feature: setInterval will update this -->
+    <div id="clock">Loading time...</div>
+  </header>
+
+  <main>
+    <!-- Search and Filter Section -->
+    <section class="controls">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search by Name or Location...">
+      </div>
+
+      <div class="filter-box">
+        <input type="number" id="maxPriceInput" placeholder="Max Price" min="0">
+
+        <select id="minRatingSelect">
+          <option value="0">All Ratings</option>
+          <option value="3">3+ Stars</option>
+          <option value="4">4+ Stars</option>
+          <option value="4.5">4.5+ Stars</option>
+        </select>
+
+        <select id="sortSelect">
+          <option value="none">Sort By</option>
+          <option value="priceLowHigh">Price: Low to High</option>
+          <option value="priceHighLow">Price: High to Low</option>
+        </select>
+
+        <button id="applyFiltersBtn">Apply Filters</button>
+      </div>
+    </section>
+
+    <!-- Async status message -->
+    <div id="statusMessage">Loading hotels...</div>
+
+    <!-- Hotel List Container (DOM Manipulation happens here) -->
+    <section id="hotelContainer" class="hotel-grid">
+      <!-- Cards will be dynamically injected here using JS -->
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
