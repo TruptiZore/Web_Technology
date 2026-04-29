@@ -1,6 +1,7 @@
 Q1))) what are types of middleware ? 
 
 1. Application-level Middleware --------
+It is function, that runs between request and response.
 These are attached to your app using app.use() or route methods.
     Used for :
             Logging
