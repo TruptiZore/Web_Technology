@@ -25,7 +25,7 @@ Why package-lock.json is Important -------
 
 Q2))) diff betn dependencies and dev dependencies
 
-| Feature                 | dependencies                         | devDependencies                        |
+| Feature                 | dependencies                         | dev Dependencies                       |
 | ----------------------- | ------------------------------------ | -------------------------------------- |
 | Purpose                 | Required for running the application | Required only during development       |
 | Used In                 | Production + Development             | Development only                       |
