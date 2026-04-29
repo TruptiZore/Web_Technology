@@ -12,7 +12,7 @@ promises has 3 states ---
 ex ----  pending -> resolve or rejected
 
 syntax ----
-        let myPromise = new Promise((resolve, reject) => {
+        let myPromise = new Promise((resolve, reject, next) => {
         });
 
 resolve --> success
