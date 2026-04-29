@@ -1,0 +1,102 @@
+Activity 1 ))))  Understand State in React
+
+🔹 What is State -------
+    -   State is a built-in object in React used to store dynamic data in a component.
+    -   It controls how the component behaves and what it displays.
+    -   State can change over time 
+    -   When state changes → component re-renders
+    -   Managed inside the component
+
+🔹 Why we use State ----
+        To store user input
+        To update UI dynamically
+        To handle events (click, form, etc.)
+
+Example 1 : Counter (Basic State) -----
+
+import React, { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <h2>{count}</h2>
+      <button onClick={() => setCount(count + 1)}>Increase</button>
+    </div>
+  );
+}
+
+Understanding -----
+    count → current state value
+    setCount → updates state
+    Clicking button → state changes → UI updates
+
+Key Points of State -----
+        Local to component
+        Updates UI automatically
+        Should not be modified directly
+        Always use setter function
+
+
+Activity 2 )))))  Understand Hooks in React
+
+🔹 What are Hooks ------
+    -   Hooks are functions that let you use React features in functional components.
+
+    -   Before hooks → only class components had state
+    -   After hooks → functional components can use state and more
+
+🔹 Why Hooks are used ----
+        Simplify code
+        Avoid class components
+        Reuse logic
+        Cleaner and readable code
+
+🔹 Common Hooks ------
+
+1. useState ---
+        Used to manage state
+        const [value, setValue] = useState(0);
+
+2. useEffect ---
+        Used for side effects (API calls, timers, etc.)
+        import React, { useEffect } from "react";
+
+        function Example() 
+        {
+            useEffect(() => {
+                console.log("Component mounted");
+            }, []);
+
+            return <h1>Hello</h1>;
+        }
+
+        Runs after component renders.
+
+3. useContext ---
+        Used to share data globally
+        const value = useContext(MyContext);
+
+Example 1 : useState Hook ------
+function LikeButton() {
+  const [likes, setLikes] = useState(0);
+
+  return (
+    <button onClick={() => setLikes(likes + 1)}>
+      Likes: {likes}
+    </button>
+  );
+}
+
+🔹 Important Rules of Hooks -----
+        1.  Use hooks only inside functional components
+        2.  Call hooks at top level (not inside loops/conditions)
+        3.  Hooks always start with "use"
+
+✅ Final Summary ----
+        State → stores changing data
+        Hooks → functions to use React features
+        useState → manage state
+        useEffect → handle side effects
+        Hooks make code simpler and modern

@@ -1,0 +1,200 @@
+Q1))))) Difference between Angular and React
+
+| Feature                    | Angular                     | React                                   |
+| -------------------------- | --------------------------- | --------------------------------------- |
+| **Type**                   | Full-fledged framework      | JavaScript library                      |
+| **Developed By**           | Google                      | Meta                                    |
+| **Language Used**          | TypeScript (default)        | JavaScript (with JSX)                   |
+| **Architecture**           | MVC (Model-View-Controller) | Component-based                         |
+| **Data Binding**           | Two-way data binding        | One-way data binding                    |
+| **DOM Handling**           | Real DOM                    | Virtual DOM                             |
+| **Performance**            | Slower (compared to React)  | Faster due to Virtual DOM               |
+| **Learning Curve**         | Difficult (more concepts)   | Easier and flexible                     |
+| **Code Structure**         | Fixed and opinionated       | Flexible structure                      |
+| **State Management**       | Built-in tools              | External libraries (Redux, Context API) |
+| **Routing**                | Built-in routing            | Requires libraries (React Router)       |
+| **Dependency Injection**   | Supported (in-built)        | Not built-in                            |
+| **Reusability**            | Moderate                    | High (components)                       |
+| **Community & Popularity** | Strong but less than React  | Very large and growing                  |
+| **Use Case**               | Enterprise apps             | Dynamic UI, SPAs, startups              |
+
+Quick Conclusion ----------
+    Angular → best for large, structured enterprise applications
+    React → best for fast, flexible, and modern UI development
+
+
+Q2)))))  Market Hype (Demand) ------
+
+🔹 React -----
+        Very high demand in industry
+        Widely used in startups and big companies
+        Strong ecosystem (Redux, Next.js, etc.)
+        Easier to learn → more developers → more jobs
+
+🔹 Angular -----
+        Used in enterprise-level applications
+        Preferred by large organizations (banks, government)
+        Slightly less popular than React today
+
+🔹 Conclusion -----
+        React currently has more job opportunities
+        Angular still strong but niche
+
+
+Q3))))) Why React Was Created
+
+React was created by Facebook (now Meta).
+
+🔹 Problems Before React -----
+        DOM updates were slow
+        Complex UI became hard to manage
+        Code was difficult to maintain
+
+🔹 Goals of React -----
+        Make UI updates fast
+        Improve code reusability
+        Simplify complex interfaces
+        Make UI predictable
+
+🔹 Key Solution -----
+        Introduced Virtual DOM
+        Introduced Component-based design
+
+🔹 Result -----
+        Faster performance
+        Clean and reusable code
+        Easier debugging
+
+
+Q4))))) What is Components? Types of Components
+
+🔹 What is a Component -------
+        A component is a reusable piece of UI.
+
+        Think of it like a function that returns HTML.
+
+Example :
+    Button
+    Navbar
+    Form
+    Card
+
+🔹 Types of Components ------
+
+    1. Functional Components ----
+        Simple JavaScript functions
+        Use Hooks (like useState)
+        EX -
+            function Welcome() {
+            return <h1>Hello</h1>;
+            }
+
+    2. Class Components ----
+        ES6 classes
+        Use lifecycle methods
+        EX -
+        class Welcome extends React.Component {
+            render() {
+                return <h1>Hello</h1>;
+            }
+        }
+
+    🔹 Modern Usage ----
+        Functional components are preferred now
+
+
+Q5))))) Where We Use Components in React (with examples)
+
+🔹 Purpose -----
+
+Components help in :
+    Code reusability
+    Better structure
+    Easy maintenance
+
+✅ Example 1 : Navbar Component ----
+
+    function Navbar() {
+        return <h1>My Website</h1>;
+    }
+
+    Use in App :
+        <Navbar />
+
+Used in all pages → reusable UI
+
+✅ Example 2 : Product Card Component -----
+
+    function Product(props) {
+        return <h2>{props.name}</h2>;
+    }
+
+    Use :
+        <Product name="Laptop" />
+        <Product name="Mobile" />
+
+    Same component, different data
+
+
+Q6))))) What is Props? Why We Use Props?
+
+🔹 What are Props ------    
+        Props = Properties
+
+        They are used to pass data from parent to child component.
+
+🔹 Example ----
+
+function Welcome(props) {
+    return <h1>Hello {props.name}</h1>;
+}
+
+Usage : 
+    <Welcome name="Trupti" />
+
+🔹 Why We Use Props ----
+        To pass data between components
+        To make components reusable
+        To customize components
+        To keep components dynamic
+
+    Without props, components would be static
+
+
+Q7))))) Types of Props (with examples)
+
+There are no strict “types” officially, but we classify props based on usage.
+
+🔹 1. String Props -----
+        <Greet name="Trupti" />
+
+🔹 2. Number Props ----- 
+        <Age value={21} />
+
+🔹 3. Boolean Props -----
+        <Button disabled={true} />
+
+🔹 4. Array Props -----
+        <List items={["Apple", "Banana"]} />
+
+🔹 5. Object Props ----- 
+        <User data={{name: "Trupti", age: 21}} />
+
+🔹 6. Function Props -----
+        -   Passing function as prop (important)
+        function Parent() {
+            function sayHello() {
+                alert("Hello");
+        }
+            return <Child greet={sayHello} />;
+        }
+
+🔹 Example 1: Multiple Props
+    function Student(props) {
+        return (
+            <div>
+            <h1>{props.name}</h1>
+            <p>{props.age}</p>
+            </div>
+        );
+    }
