@@ -1,0 +1,15 @@
+Routing --------
+    -   Navigation between one page to another page.
+
+There are 3 steps in routing ---
+    1.  app.routes.ts ----
+            -   Binding of all components. 
+            -   add all component path 
+
+    2.  app.ts ----
+            -   imports[RouterOutlet, RouterLink] 
+
+    3.  app.html ----
+            <ul>
+                <li><a>.....add RouterLinks.....</a></li>
+            </ul>
