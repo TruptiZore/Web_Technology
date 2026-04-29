@@ -1,0 +1,14 @@
+/* remove default margins + Vite side lines */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
