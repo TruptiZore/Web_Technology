@@ -1,0 +1,17 @@
+Activity ----
+1.  hide button click -> div remove if click unhide -> display div
+2.  use toggle button to change color of div.
+3.  num1 and num2 value is same div display otherwise remove.
+4.  use dropdown when click on dropdown content then that content must displays on that div.
+5.  write 2 example services with angular 
+6.  leran more aout Dependency Injection
+
+
+Services and Dependency Injection in Angular --
+
+services is like helper class.
+it is used to store data and share logic so many component use 
+instead of writing the same code in every component , we write it once in a service.
+
+command to create Services ---
+    -   ng g s Service_name
